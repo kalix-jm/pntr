@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans';
+}
+body{
+	background-image: url(hack.gif);
+	background-size: cover;
+    background-color: #1c1c1c;
+}
+nav{
+	max-width: 1200px;
+	margin: auto;
+	background-color: rgb(217, 129, 238);
+	font-size: 20px;
+	margin-top: 40px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content:center;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+	width: 160px;
+	text-align: center;
+}
+.menu-horizontal > li:hover{
+	background-color: rgb(185, 52, 218);
+	width: auto;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color:rgb(185, 52, 218);
+	
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+#html{
+	margin: auto;
+	padding: 20px;
+	max-width: 1200px;
+	background: white;
+
+}
+
+
+
+@font-face {
+    font-family: Barbarian;
+    src: url(Barbarian.ttf);
+}
+
+h1{
+    text-align: center;
+    font-size:3cm;
+    background: linear-gradient(#8a4c98, #5e1e6c);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: text 5s linear infinite;
+    margin-top: 20px;
+    box-sizing: border-box;
+    font-family:Barbarian;
+}
+
+
+@keyframes text{
+    0%{
+        filter: hue-rotate(340deg);
+    }
+    100%{
+        filter: hue-rotate(345deg);
+}
+}
+
+
+/*js*/ 
+
+.mostrar{
+	margin-top: 0;
+}
